@@ -15,11 +15,14 @@
 >The downloaded files were in zip format ('bz2'). This dataset consists of flight related details like month, day of week, carriers, arrival & departure delays, and reasons for delays. For the purpose of this project I have used data from years 2006-2008 (last three years in the dataset). 
 
 > Wrangling steps performed on the dataset:
+>   
     >o Gathering data - Read CSV files that were zipped (.bz2 format) for years 2006 to 2008 into dataframes 
+    >
     >o Assessing data ‐ quality & tidiness 
         > The few columns had different dtype across different years dataset
         > CarrierDelay, WeatherDelay, NASDelay, SecurityDelay and LateAircraftDelay in dataset 2008 has NaN
         > Delay columns should be melted into two colums - Delay and DelayTime.
+    >
     >o Cleaning data
         > Merging the 2006 to 2008 fixed the dtype issue
         > Filled in 0's for all NaN values in 2008 dataset.
